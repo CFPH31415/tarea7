@@ -8,11 +8,12 @@ import { Component } from '@angular/core';
 
 
 export class DadoComponent {
-    public dadoValue: number = 0;
 
-    dadoRoll() {
-        let randomNum = Math.floor(Math.random() * 6) + 1;
-        this.dadoValue = randomNum;
-    }
+  numero= 0;
+  resultado=0;
+  tirarDado(){
+    
+    this.resultado = this.numero = Math.floor((Math.random() * 6) + 1);
+
+  }
 }
-
