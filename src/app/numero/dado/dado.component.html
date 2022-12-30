@@ -1,11 +1,8 @@
-<div class="diceRoller">
-    <div>
-        <div class="container">
-            <div><button>{{ dadoValue }}</button></div>
+<div class="container">
+    <div class="dado">
+        <span>{{numero}}</span>
     </div>
+    <div class="boton">
+        <button (click)="tirarDado()"> Dado</button>
     </div>
-    <div class="container">
-    <button (click)="dadoRoll()">DADO</button>
 </div>
-</div>
-
